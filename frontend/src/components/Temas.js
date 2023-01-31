@@ -13,9 +13,7 @@ export const Temas = () => {
     await axios.get(baseUrl)
       .then(response=>{
         setData(response.data);
-      }).catch(error => {console.log(error)})
-    
-      
+      }).catch(error => {console.log(error)})  
   }
 
   useEffect(()=>{
@@ -23,7 +21,6 @@ export const Temas = () => {
     
   },[])
 
-  console.log(data)
   return (
     <div className='container'>
         <div class="row">
@@ -32,7 +29,7 @@ export const Temas = () => {
                     <div className='card'>
                     <div className="card-body">
                     <h5 className="card-title">{tema.title}</h5>
-                    <Link to='/#' className='btn btn-primary'>Começar</Link>
+                    <Link to={{pathname:`/quiz/${tema.title}`}}  className='btn btn-primary'>Começar</Link>
                     </div>
                     </div>
                 </div>

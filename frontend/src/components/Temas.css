@@ -1,4 +1,15 @@
 .container{
+    margin: 0px;
+    background-image: url("https://i0.wp.com/www.orientacionandujar.es/wp-content/uploads/2020/08/Fondos-Aulas-Virtuales-Digitales-35.jpg?fit=626%2C400&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    background-image: none;
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

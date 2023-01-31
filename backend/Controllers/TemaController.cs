@@ -58,7 +58,6 @@ namespace backend.Controllers
         }
 
         [HttpDelete]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme,Roles = "Administrator")]
         [Route("/deletetema/{id}")]
         public async Task<IActionResult> DeleteTema(int id)
         {
